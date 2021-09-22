@@ -1,5 +1,5 @@
 const net = require("net");
-//const stdin = process.stdin;
+
 const connect = function () {
   const conn = net.createConnection({
     host: "135.23.223.133",
@@ -12,7 +12,7 @@ const connect = function () {
     conn.write("Say: Hey");
     console.log("Successfully connected to game server");
     //conn.write("Move: left");
-    conn.write("Move: down");
+    //conn.write("Move: down");
     
     console.log("hi connected!!!...");
     
@@ -37,6 +37,5 @@ const connect = function () {
 };
 
 
-console.log("Connecting ...");
-connect();
+
 module.exports = connect;
